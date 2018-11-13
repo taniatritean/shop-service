@@ -21,7 +21,7 @@ public class ShopService {
     public Shop findOne(Long shopId) {
         Shop shop = shopRepository.findOne(shopId);
         if (shop == null) {
-            throw new NotFoundException(shopId);
+            throw new NotFoundException(""+shopId);
         }
         return shop;
     }

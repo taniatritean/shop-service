@@ -17,7 +17,7 @@ public class ShopController {
     private ShopService shopService;
 
     @RequestMapping(value = {"/{blueprintId}"}, method = RequestMethod.GET)
-    public Shop findShop(@PathVariable("shopId") String shopId) {
+    public Shop findShop(@PathVariable("shopId") Long shopId) {
         LOGGER.info("shopId >> {}", shopId);
 
         return shopService.findOne(shopId);

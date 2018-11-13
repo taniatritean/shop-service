@@ -23,7 +23,7 @@ public class ShopIntegrationTest {
 
     @Test
     public void testFind() {
-        shopService.findOne("1");
+        shopService.findOne(1L);
     }
 
 }
