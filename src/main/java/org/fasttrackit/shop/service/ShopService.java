@@ -5,6 +5,8 @@ import org.fasttrackit.shop.exception.NotFoundException;
 import org.fasttrackit.shop.persistence.ShopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Service

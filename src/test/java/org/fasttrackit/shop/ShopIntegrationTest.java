@@ -1,6 +1,8 @@
 package org.fasttrackit.shop;
 
+import org.fasttrackit.shop.domain.Shop;
 import org.fasttrackit.shop.service.ShopService;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +23,13 @@ public class ShopIntegrationTest {
     @Autowired
     private ShopService shopService;
 
+
+
     @Test
     public void testFind() {
-        shopService.findOne(1L);
+
+        Shop shopOne = shopService.findOne(1L);
+        Assert.assertNotNull(shopOne);
     }
 
 }

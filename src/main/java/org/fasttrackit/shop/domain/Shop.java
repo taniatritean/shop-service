@@ -26,6 +26,7 @@ public class Shop implements Serializable {
     )
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY)
